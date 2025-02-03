@@ -36,7 +36,7 @@ echo $(date +"%Y-%m-%d %T") phase done
 
 mkdir -p ${GRAPHS}
 # Build the VG graphs
-echo $(date +"%Y-%m-%d %T") Executing vg auto ${samples[SLURM_ARRAY_TASK_ID]}
+echo $(date +"%Y-%m-%d %T") Executing vg autoindex
 /bin/time -v -p ${CONSTRUCTION}/vg autoindex --workflow giraffe -r ${REFERENCE} -v ${CONSTRUCTION}/7.ONT_Chromosome_Scaffold_Contig_merge_RemoveOverlapSV_all_0.8_transphased.vcf.gz -T ${LARGE_DISK_TMP} -t 64 -V 2 -p ${GRAPHS}/out
 echo $(date +"%Y-%m-%d %T") done vg auto
 
