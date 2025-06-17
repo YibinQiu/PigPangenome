@@ -33,4 +33,5 @@ codes in (g. Epistasis interactions), which includes epistatic effects estimatio
 
 codes in (g. Epistasis interactions), which relationship matrix construction, GBLUP, ADI-BLUP.
 
+### Layout of the swine graph-based variome study：
 ![image](https://github.com/YibinQiu/PigPangenome/blob/main/workflow.png)
