@@ -3,7 +3,7 @@
 rm(list = ls())
 
 # Read the G matrix file
-G <- read.table(paste0(i,"_50K_G.txt"), header = FALSE)
+G <- read.table("50K_G.txt", header = FALSE)
 G <- as.matrix(G)
 
 # Calculate the matrix order
@@ -17,6 +17,6 @@ trace_E <- sum(diag(E))
 cat("Trace of matrix E:", trace_E, "\n")
 
 E <- E/(trace_E/n)
-output_file_name <- paste0(i, "_50K_E.txt")
+output_file_name <- "50K_E.txt"
 write.table(E, output_file_name, row.names = FALSE, col.names = FALSE)
 print(E[1:5, 1:5])

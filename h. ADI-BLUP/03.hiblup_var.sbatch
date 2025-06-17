@@ -9,15 +9,12 @@ gs_array_task=./gs_array_task.txt
 
 # Read trait array
 traits=($(cat ${gs_array_task} | awk '{print $1}'))
-geno_num=($(cat ${gs_array_task} | awk '{print $2}'))
 trait=${traits[$SLURM_ARRAY_TASK_ID]}
-i=${geno_num[$SLURM_ARRAY_TASK_ID]}
 echo "正在处理性状: ${trait}"
-echo "性状的个体数量: ${i}"
 
 # Define specific files
 pheno_file=${path1}/${trait}.txt
-xrm_output=${path2}/${i}_50K
+xrm_output=${path2}/50K
 result_output=${path3}/${trait}_add_dom_epi
 
 # Estimate the variance components
