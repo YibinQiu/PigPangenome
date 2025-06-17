@@ -1,7 +1,7 @@
 #!/bin/bash
-# usage:sbatch 1.filter_ONT.sbatch
+# usage:sbatch 6.filter_ONT.sbatch
 # Job name:
-#SBATCH --job-name=1.filter_ONT.sbatch
+#SBATCH --job-name=6.filter_ONT.sbatch
 #
 # Number of nodes needed for use case:
 #SBATCH --nodes=1
@@ -12,7 +12,7 @@
 # Processors per task:
 #SBATCH --cpus-per-task=24
 # Memory per node:
-#SBATCH --output=1.filter_ONT_%j.out
+#SBATCH --output=6.filter_ONT_%j.out
 ref=reference
 input=raw_vcf
 output=1.ONT_highConfidence

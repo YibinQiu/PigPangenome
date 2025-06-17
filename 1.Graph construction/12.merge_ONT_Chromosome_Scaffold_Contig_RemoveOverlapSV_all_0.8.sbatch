@@ -1,7 +1,7 @@
 #!/bin/bash
-# usage:yhbatch 6.merge_ONT_Chromosome_Scaffold_Contig_RemoveOverlapSV_all_0.8.sbatch
+# usage:yhbatch 12.merge_ONT_Chromosome_Scaffold_Contig_RemoveOverlapSV_all_0.8.sbatch
 # Job name:
-#SBATCH --job-name=6.merge_ONT_Chromosome_Scaffold_Contig_RemoveOverlapSV_all_0.8.sbatch
+#SBATCH --job-name=12.merge_ONT_Chromosome_Scaffold_Contig_RemoveOverlapSV_all_0.8.sbatch
 #
 # Number of nodes needed for use case:
 #SBATCH --nodes=1
@@ -12,7 +12,7 @@
 # Processors per task:
 #SBATCH --cpus-per-task=24
 # Memory per node:
-#SBATCH --output=6.merge_ONT_Chromosome_Scaffold_Contig_RemoveOverlapSV_all_0.8_%j.out
+#SBATCH --output=12.merge_ONT_Chromosome_Scaffold_Contig_RemoveOverlapSV_all_0.8_%j.out
 export LANGUAGE="en_US.UTF-8"
 export LANG=en_US:zh_CN.UTF-8
 export LC_ALL=C

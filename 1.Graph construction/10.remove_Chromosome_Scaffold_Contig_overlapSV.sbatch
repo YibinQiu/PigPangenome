@@ -1,7 +1,7 @@
 #!/bin/bash
-# usage:sbatch 4.remove_Chromosome_Scaffold_Contig_overlapSV.sbatch
+# usage:sbatch 10.remove_Chromosome_Scaffold_Contig_overlapSV.sbatch
 # Job name:
-#SBATCH --job-name=4.remove_Chromosome_Scaffold_Contig_overlapSV.sbatch
+#SBATCH --job-name=10.remove_Chromosome_Scaffold_Contig_overlapSV.sbatch
 #
 # Number of nodes needed for use case:
 #SBATCH --nodes=1
@@ -12,7 +12,7 @@
 #SBATCH --cpus-per-task=24
 # Memory per node:
 #SBATCH --mem=125G
-#SBATCH --output=4.remove_Chromosome_Scaffold_Contig_overlapSV_%j.out
+#SBATCH --output=10.remove_Chromosome_Scaffold_Contig_overlapSV_%j.out
 
 export LANGUAGE="en_US.UTF-8"
 export LANG=en_US:zh_CN.UTF-8

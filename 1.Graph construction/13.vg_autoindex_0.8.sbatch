@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --exclusive
-# usage:sbatch 7.vg_autoindex_0.8.sbatch
+# usage:sbatch 13.vg_autoindex_0.8.sbatch
 # Job name:
-#SBATCH --job-name=7.vg_autoindex_0.8.sbatch
+#SBATCH --job-name=13.vg_autoindex_0.8.sbatch
 #
 # Number of nodes needed for use case:
 #SBATCH --nodes=1
 #SBATCH --partition=hebhcnormal01
 ###############SBATCH --mem=1000000M
-#SBATCH --output=7.vg_autoindex_0.8_%j.out
+#SBATCH --output=13.vg_autoindex_0.8_%j.out
 
 CONSTRUCTION="./"
 LARGE_DISK_TMP=${CONSTRUCTION}/7.vg_autoindex_0.8_tmp

@@ -1,7 +1,7 @@
 #!/bin/bash
-# usage:yhbatch 1.filter_Assemble.sbatch
+# usage:yhbatch 7.filter_Assemble.sbatch
 # Job name:
-#SBATCH --job-name=1.filter_Assemble.sbatch
+#SBATCH --job-name=7.filter_Assemble.sbatch
 #
 # Number of nodes needed for use case:
 #SBATCH --nodes=1
@@ -12,7 +12,7 @@
 # Processors per task:
 #SBATCH --cpus-per-task=24
 # Memory per node:
-#SBATCH --output=1.filter_Assemble_%j.out
+#SBATCH --output=7.filter_Assemble_%j.out
 module load anaconda3
 module load bcftools
 export LANGUAGE="en_US.UTF-8"

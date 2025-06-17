@@ -1,5 +1,5 @@
 #!/bin/bash
-# usage:sbatch --export=samplelist="ontsample" --array=0-9%10 2.sniffles.sbatch
+# usage:sbatch --export=samplelist="ontsample" --array=0-149%50 2.sniffles.sbatch
 # Job name:
 #SBATCH --job-name=2.sniffles
 #SBATCH --qos=nolimit
@@ -33,7 +33,7 @@ output="./"
 ref="./"
 
 echo $(date +"%Y-%m-%d %T") ${sample[SLURM_ARRAY_TASK_ID]} start sniffles
-sniffles --allow-overwrite -i ${input}/${sample[SLURM_ARRAY_TASK_ID]}/${sample[SLURM_ARRAY_TASK_ID]}.bam -v ${output}/${sample[SLURM_ARRAY_TASK_ID]}/${sample[SLURM_ARRAY_TASK_ID]}.vcf --snf ${output}/${sample[SLURM_ARRAY_TASK_ID]}/${sample[SLURM_ARRAY_TASK_ID]}.snf --threads 64 --cluster-merge-bnd 50 --minsvlen 30 --output-rnames --reference ${ref}/Sus_scrofa.Sscrofa11.1.dna.toplevel.fa --max-del-seq-len 100000 --sample-id ${sample[SLURM_ARRAY_TASK_ID]} &> ${output}/${sample[SLURM_ARRAY_TASK_ID]}/${sample[SLURM_ARRAY_TASK_ID]}_sniffles.vcf.log
+sniffles --allow-overwrite -i ${input}/${sample[SLURM_ARRAY_TASK_ID]}/${sample[SLURM_ARRAY_TASK_ID]}.bam -v ${output}/${sample[SLURM_ARRAY_TASK_ID]}/${sample[SLURM_ARRAY_TASK_ID]}.vcf --snf ${output}/${sample[SLURM_ARRAY_TASK_ID]}/${sample[SLURM_ARRAY_TASK_ID]}.snf --threads 64 --cluster-merge-bnd 50 --minsvlen 30 --output-rnames --reference ${ref}/W64_addSscrofa11.1ChrYChrMT_removesyncContig.primary_assembly.fa --max-del-seq-len 100000 --sample-id ${sample[SLURM_ARRAY_TASK_ID]} &> ${output}/${sample[SLURM_ARRAY_TASK_ID]}/${sample[SLURM_ARRAY_TASK_ID]}_sniffles.vcf.log
 echo $(date +"%Y-%m-%d %T") ${sample[SLURM_ARRAY_TASK_ID]} sniffles done
 
 echo "++++++++++++++++++++++++++++++++++++++++"

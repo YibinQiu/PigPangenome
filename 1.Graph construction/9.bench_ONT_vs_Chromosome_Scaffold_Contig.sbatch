@@ -1,7 +1,7 @@
 #!/bin/bash
-# usage:yhbatch 3.bench_ONT_vs_Chromosome_Scaffold_Contig.sbatch
+# usage:yhbatch 9.bench_ONT_vs_Chromosome_Scaffold_Contig.sbatch
 # Job name:
-#SBATCH --job-name=3.bench_ONT_vs_Chromosome_Scaffold_Contig.sbatch
+#SBATCH --job-name=9.bench_ONT_vs_Chromosome_Scaffold_Contig.sbatch
 #
 # Number of nodes needed for use case:
 #SBATCH --nodes=1
@@ -12,7 +12,7 @@
 # Processors per task:
 #SBATCH --cpus-per-task=24
 # Memory per node:
-#SBATCH --output=3.bench_ONT_vs_Chromosome_Scaffold_Contig_%j.out
+#SBATCH --output=9.bench_ONT_vs_Chromosome_Scaffold_Contig_%j.out
 export LANGUAGE="en_US.UTF-8"
 export LANG=en_US:zh_CN.UTF-8
 export LC_ALL=C

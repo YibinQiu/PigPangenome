@@ -1,7 +1,7 @@
 #!/bin/bash
-# usage:yhbatch 2.merge_ONT_merge_Assemble.sbatch
+# usage:yhbatch 8.merge_ONT_merge_Assemble.sbatch
 # Job name:
-#SBATCH --job-name=2.merge_ONT_merge_Assemble.sbatch
+#SBATCH --job-name=8.merge_ONT_merge_Assemble.sbatch
 #
 # Number of nodes needed for use case:
 #SBATCH --nodes=1
@@ -12,7 +12,7 @@
 # Processors per task:
 #SBATCH --cpus-per-task=24
 # Memory per node:
-#SBATCH --output=2.merge_ONT_merge_Assemble_%j.out
+#SBATCH --output=8.merge_ONT_merge_Assemble_%j.out
 
 module load bcftools
 

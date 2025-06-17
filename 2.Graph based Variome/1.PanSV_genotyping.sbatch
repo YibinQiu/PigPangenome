@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
-# usage:sbatch -a 1-2598 1.giraffe_genotyping.sbatch 1 2598 totalsample
+# usage:sbatch -a 1-2598 1.PanSV_genotyping.sbatch 1 2598 totalsample
 # Job name:
-#SBATCH --job-name=1.giraffe_genotyping.sbatch
+#SBATCH --job-name=1.PanSV_genotyping.sbatch
 #
 # Number of nodes needed for use case:
 #SBATCH --nodes=1
@@ -11,7 +11,7 @@ set -e
 #SBATCH --ntasks-per-node=1
 # Processors per task:
 #SBATCH --cpus-per-task=24
-#SBATCH --output=1.giraffe_genotyping_%A_%a_%j.out
+#SBATCH --output=1.PanSV_genotyping_%A_%a_%j.out
 
 start=$1
 end=$2
