@@ -1,13 +1,13 @@
 #!/bin/bash
-# usage:sbatch --export=pop="DUR",pop1="03ADUR",pop2="13ADUR" 01PigPan_Fst.sbatch
-# usage:sbatch --export=pop="DUR",pop1="03ADUR",pop2="21ADUR" 01PigPan_Fst.sbatch
-# usage:sbatch --export=pop="DUR",pop1="13ADUR",pop2="21ADUR" 01PigPan_Fst.sbatch
+# usage:sbatch --export=pop="DUR",pop1="03ADUR",pop2="13ADUR" 01.PigPan_Fst.sbatch
+# usage:sbatch --export=pop="DUR",pop1="03ADUR",pop2="21ADUR" 01.PigPan_Fst.sbatch
+# usage:sbatch --export=pop="DUR",pop1="13ADUR",pop2="21ADUR" 01.PigPan_Fst.sbatch
 
-# usage:sbatch --export=pop="LR",pop1="03WLR",pop2="12WLR" 01PigPan_Fst.sbatch
-# usage:sbatch --export=pop="LR",pop1="03WLR",pop2="18WLR" 01PigPan_Fst.sbatch
-# usage:sbatch --export=pop="LR",pop1="12WLR",pop2="18WLR" 01PigPan_Fst.sbatch
+# usage:sbatch --export=pop="LR",pop1="03WLR",pop2="12WLR" 01.PigPan_Fst.sbatch
+# usage:sbatch --export=pop="LR",pop1="03WLR",pop2="18WLR" 01.PigPan_Fst.sbatch
+# usage:sbatch --export=pop="LR",pop1="12WLR",pop2="18WLR" 01.PigPan_Fst.sbatch
 # Job name:
-#SBATCH --job-name=01PigPan_Fst
+#SBATCH --job-name=01.PigPan_Fst
 #SBATCH --account=szzx
 # Number of nodes needed for use case:
 #SBATCH --nodes=1
@@ -16,7 +16,7 @@
 #SBATCH --cpus-per-task=64
 #SBATCH --mem-per-cpu=15000MB
 #SBATCH -t 48:00:00
-#SBATCH --output=logs/01PigPan_Fst_%j.out
+#SBATCH --output=logs/01.PigPan_Fst_%j.out
 CURDIR=`pwd`
 rm -rf $CURDIR/nodelist.$SLURM_JOB_ID
 NODES=`scontrol show hostnames $SLURM_JOB_NODELIST`
