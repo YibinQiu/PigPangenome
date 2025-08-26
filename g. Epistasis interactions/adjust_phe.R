@@ -90,7 +90,7 @@ if (ncol(covfile)==2) {
 } else {
   colnames(covfile)<-c("fid","iid",paste0("cov",1:(ncol(covfile)-2)))
 }
-covfile<-covfile%>%mutate(across(-c(1,2),as.factor))
+covfile<-covfile%>%mutate(across(-c(1,2),as.factor)) #actually, yaozekai do yc in hiblup, found high correaltion (r=0.98) between yc and adjusted phe in R (no as.factor, let cov as qcov)
 message(format(Sys.time(),"%Y-%m-%d %H:%M:%S"),". INFO: ",nrow(covfile)," individuals are included from covfile.")
 
 message(format(Sys.time(),"%Y-%m-%d %H:%M:%S"),". INFO: reading traitfile from [ ",paste0(input_trait,"/",traitfile)," ].")
