@@ -31,7 +31,7 @@ codes in (7. Epistasis interactions), which includes epistatic effects estimatio
 
 #### 8. ADI-BLUP
 
-codes in (8. Epistasis interactions), which relationship matrix construction, GBLUP, ADI-BLUP.
+codes in (8. ADI-BLUP), which relationship matrix construction, GBLUP, ADI-BLUP.
 
 ### Layout of the swine graph-based variome study：
 ![image](https://github.com/YibinQiu/PigPangenome/blob/main/workflow.png)
